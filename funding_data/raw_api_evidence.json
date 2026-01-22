@@ -1,0 +1,128 @@
+{
+  "binance": {
+    "endpoint": "https://fapi.binance.com/fapi/v1/premiumIndex",
+    "params": {
+      "symbol": "BTCUSDT"
+    },
+    "timestamp": "2026-01-18T10:53:59.047670",
+    "raw_response": {
+      "symbol": "BTCUSDT",
+      "markPrice": "95066.53906667",
+      "indexPrice": "95109.26075000",
+      "estimatedSettlePrice": "95097.26566446",
+      "lastFundingRate": "0.00005102",
+      "interestRate": "0.00010000",
+      "nextFundingTime": 1768723200000,
+      "time": 1768712039000
+    },
+    "interest_rate_field": 0.0001,
+    "interest_rate_8h_pct": 0.01,
+    "interest_rate_daily_pct": 0.030000000000000002,
+    "interest_rate_annual_pct": 10.950000000000001,
+    "conclusion": "Binance API explicitly returns 'interestRate' field - direct evidence of riba"
+  },
+  "bybit": {
+    "endpoint": "https://api.bybit.com/v5/market/tickers",
+    "params": {
+      "category": "linear",
+      "symbol": "BTCUSDT"
+    },
+    "timestamp": "2026-01-18T10:54:00.149004",
+    "raw_response": {
+      "retCode": 0,
+      "retMsg": "OK",
+      "result": {
+        "category": "linear",
+        "list": [
+          {
+            "symbol": "BTCUSDT",
+            "lastPrice": "95056.80",
+            "indexPrice": "95108.13",
+            "markPrice": "95067.45",
+            "prevPrice24h": "95318.00",
+            "price24hPcnt": "-0.00274",
+            "highPrice24h": "95653.30",
+            "lowPrice24h": "94816.40",
+            "prevPrice1h": "95109.10",
+            "openInterest": "50035.877",
+            "openInterestValue": "4756783234.90",
+            "turnover24h": "1517599097.6183",
+            "volume24h": "15939.9620",
+            "fundingRate": "0.00002667",
+            "nextFundingTime": "1768723200000",
+            "predictedDeliveryPrice": "",
+            "basisRate": "",
+            "deliveryFeeRate": "",
+            "deliveryTime": "0",
+            "ask1Size": "4.984",
+            "bid1Price": "95056.70",
+            "ask1Price": "95056.80",
+            "bid1Size": "2.289",
+            "basis": "",
+            "preOpenPrice": "",
+            "preQty": "",
+            "curPreListingPhase": "",
+            "fundingIntervalHour": "8",
+            "basisRateYear": "",
+            "fundingCap": "0.005"
+          }
+        ]
+      },
+      "retExtInfo": {},
+      "time": 1768712040230
+    },
+    "current_funding_rate": 2.667e-05,
+    "note": "Bybit documentation confirms 0.01% per 8h interest rate component"
+  },
+  "dydx": {
+    "endpoint": "https://indexer.dydx.trade/v4/perpetualMarkets",
+    "timestamp": "2026-01-18T10:54:01.801110",
+    "btc_market_data": {
+      "clobPairId": "0",
+      "ticker": "BTC-USD",
+      "status": "ACTIVE",
+      "oraclePrice": "95094.86553",
+      "priceChange24H": "-199.09474",
+      "volume24H": "54833143.9485",
+      "trades24H": 25190,
+      "nextFundingRate": "0.00000956944444444444",
+      "initialMarginFraction": "0.02",
+      "maintenanceMarginFraction": "0.012",
+      "openInterest": "359.4174",
+      "atomicResolution": -10,
+      "quantumConversionExponent": -9,
+      "tickSize": "1",
+      "stepSize": "0.0001",
+      "stepBaseQuantums": 1000000,
+      "subticksPerTick": 100000,
+      "marketType": "CROSS",
+      "openInterestLowerCap": "0",
+      "openInterestUpperCap": "0",
+      "baseOpenInterest": "782.0931",
+      "defaultFundingRate1H": "0"
+    },
+    "interest_component": "0% - explicitly documented",
+    "conclusion": "dYdX uses premium-only funding with zero interest"
+  },
+  "hyperliquid": {
+    "endpoint": "https://api.hyperliquid.xyz/info",
+    "timestamp": "2026-01-18T10:54:02.941947",
+    "btc_asset_data": {
+      "funding": "0.0000125",
+      "openInterest": "31192.65346",
+      "prevDayPx": "95323.0",
+      "dayNtlVlm": "691623672.8528780937",
+      "premium": "-0.0000946293",
+      "oraclePx": "95108.0",
+      "markPx": "95098.0",
+      "midPx": "95098.5",
+      "impactPxs": [
+        "95098.0",
+        "95099.0"
+      ],
+      "dayBaseVlm": "7260.79931"
+    },
+    "interest_component": "None - premium only",
+    "conclusion": "Hyperliquid uses premium-only funding mechanism"
+  }
+}

@@ -1,0 +1,20 @@
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Duplicates in root (already in funding_data/)
+cex_vs_dex_funding_comparison.*
+enhanced_cex_vs_dex_analysis.*

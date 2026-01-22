@@ -1,0 +1,23 @@
+
+\begin{table*}[h]
+\centering
+\caption{Empirical Comparison of CEX vs DEX Funding Rate Mechanisms}
+\label{tab:funding_comparison}
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+\textbf{Platform} & \textbf{Type} & \textbf{Interest Component} & \textbf{Mean Rate} & \textbf{Std Dev} & \textbf{Min} & \textbf{Max} \\
+\midrule
+Binance Btc & CEX & Yes (0.03\%/day) & 0.0053% & 0.0033% & -0.0028% & 0.0100% \\
+Binance Eth & CEX & Yes (0.03\%/day) & 0.0052% & 0.0031% & -0.0023% & 0.0100% \\
+Dydx Btc & DEX & No & 0.0001% & 0.0011% & -0.0048% & 0.0017% \\
+Dydx Eth & DEX & No & 0.0005% & 0.0008% & -0.0011% & 0.0032% \\
+Hyperliquid Btc & DEX & No & 0.0010% & 0.0007% & -0.0018% & 0.0056% \\
+Hyperliquid Eth & DEX & No & 0.0009% & 0.0005% & -0.0012% & 0.0013% \\
+
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\small
+\item Data collected January 2026. CEX platforms include explicit interest rate components in their funding formulas. DEX platforms use premium-only mechanisms with zero interest.
+\end{tablenotes}
+\end{table*}

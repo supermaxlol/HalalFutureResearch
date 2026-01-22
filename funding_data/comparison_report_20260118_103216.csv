@@ -1,0 +1,7 @@
+Source,Platform_Type,Has_Interest_Component,Daily_Interest_Rate,Num_Records,Mean_Funding_Rate,Std_Funding_Rate,Min_Funding_Rate,Max_Funding_Rate,Funding_Interval
+binance_btc,CEX,YES (0.01% per 8h),0.030%,90,0.0053%,0.0033%,-0.0028%,0.0100%,8 hours
+binance_eth,CEX,YES (0.01% per 8h),0.030%,90,0.0052%,0.0031%,-0.0023%,0.0100%,8 hours
+dydx_btc,DEX,NO (Premium-only),0%,100,0.0001%,0.0011%,-0.0048%,0.0017%,1 hour
+dydx_eth,DEX,NO (Premium-only),0%,100,0.0005%,0.0008%,-0.0011%,0.0032%,1 hour
+hyperliquid_btc,DEX,NO (Premium-only),0%,500,0.0010%,0.0007%,-0.0018%,0.0056%,1 hour
+hyperliquid_eth,DEX,NO (Premium-only),0%,500,0.0009%,0.0005%,-0.0012%,0.0013%,1 hour
