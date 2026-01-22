@@ -32,8 +32,8 @@ from urllib.parse import urlencode
 # CONFIGURATION
 # ============================================================================
 
-BINANCE_API_KEY = "wbKSNv0Eg4aRUF9G7V0gmr75QfMkZ7ed4I0zMMtYPRM70A0tnVxNjGRTg4ZGPkK8"
-BINANCE_API_SECRET = "u8Esf3S9IfOAjhVMoIHO41OOhbl3oZKHcgLtnlkmXw0CbcLs4oTCbdWp2ai8LLWj"
+BINANCE_API_KEY = "dxdjxndjxnjdnxjdnxjdxixidxbufbcdxosnxodwinoiwdnxoidwnxiodwnxdnxoidx"
+BINANCE_API_SECRET = "xjdnjxndjnxjdenxjiednxijednxiednxiednxindeixndiejnxidejnxidenxdex"
 
 DATA_DIR = "/Users/shehzad/Desktop/Halalfuture/funding_data"
 os.makedirs(DATA_DIR, exist_ok=True)
